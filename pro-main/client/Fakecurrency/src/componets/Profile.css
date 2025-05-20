@@ -1,0 +1,146 @@
+.profile-container {
+    display: flex;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.profile-sidebar {
+    width: 250px;
+    background: #252525;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+
+}
+
+.profile-sidebar .user-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-sidebar ul li {
+    margin: 10px 0;
+}
+
+.profile-sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.profile-sidebar ul li a:hover,
+.profile-sidebar ul li a.active {
+    background: red;
+    color: white;
+}
+
+.profile-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background: #1e1e1e;
+    color: white;
+    height: 100vh;
+    padding: 0;
+
+}
+
+.bio-graph-heading {
+    background: #fbc02d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profile-details {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-details span {
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.currency-verification {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.currency-verification input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.currency-verification button {
+    padding: 10px 20px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.currency-verification button:hover {
+    background: #e63939;
+}
+
+
+@media (max-width: 1000px) {
+    .profile-sidebar {
+        width: 100px;
+    }
+
+    .profile-sidebar ul li a {
+        font-size: 14px;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .profile-content {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    .profile-content {
+        margin-left: 0;
+    }
+    
+    .user-info p {
+        font-size: 10px;
+      }
+      
+    
+}
